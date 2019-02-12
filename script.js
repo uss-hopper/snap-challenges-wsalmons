@@ -40,15 +40,15 @@ function loadPosts() {
 	renderedPosts = posts.map((index) => {
 		return `
 			<div class="card">
-				<div class="card-header">{$index.title}</div>
+				<div class="card-header">${index.title}</div>
 				<div class="card-body">
 					<blockquote class="blockquote mb-0">
-						<p></p>
+						<p>${index.body}</p>
 					</blockquote>
 				</div>
-			</div>`
+			</div>
+				`
 	});
-
 	const target = document.getElementById('target');
 	target.innerHTML = renderedPosts.toString();
 }
