@@ -47,8 +47,9 @@ function loadPosts() {
 					</blockquote>
 				</div>
 			</div>`
-	})
+	});
+
+	const target = document.getElementById('target');
+	target.innerHTML = renderedPosts.toString();
 }
 
-const target = document.getElementById('target');
-target.innerHTML = renderedPosts.toString();
