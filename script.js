@@ -1,4 +1,21 @@
-const array1 = [1,2,3,5,8,13,21,34];
-const reducer = (accumulator, currentValue) => accumulator * currentValue;
+/*
+fetch(`https://jsonplaceholder.typicode.com/posts`)
+.then(function(response) {
+	return response.json()
+})
 
-console.log(array1.reduce(reducer));
+.then(function(data) {
+	console.log('the data', data)
+});*/
+/*
+let newPost = {
+	title: "hello world",
+	body: "thats really something"
+};
+
+fetch(`https://jsonplaceholder.typicode.com/posts`, {
+	method: 'post',
+	body: JSON.stringify(newPost)
+})
+
+.then(responce)*/
